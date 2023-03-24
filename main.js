@@ -53,12 +53,27 @@ function createInputField(){
     input.addEventListener('keypress', getJoke)
 }
 
-function getJoke(event){
+async function getJoke(event){
     if (event.key === "Enter") {
-    console.log('hello')
+    const joke = await getFetch()
+    console.log(joke)
+    const jokeDisplay = document.createElement('p')
+    chat.appendChild(jokeDisplay)
+    jokeDisplay.textContent = joke 
     }
 
 }
+
+async function getFetch() {
+    let response = await fetch("https://icanhazdadjoke.com/", {
+        headers: { accept: "application/json" },
+      });
+    let data = await response.json()
+    console.log(data.joke)
+    return data.joke
+}
+
+
 
 
 
