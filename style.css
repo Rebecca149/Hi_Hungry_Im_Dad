@@ -1,3 +1,25 @@
 body {
     background-color: #a3d0ef;
 }
+
+p {
+    float: left;
+    padding: 10px;
+    margin: 5px;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+input {
+    float: right;
+    padding: 10px;
+    margin: 5px;
+}
+
+.container {
+    height: 500px;
+}
+
+#the-dad {
+    border-radius: 50%;
+    float:left;
+}

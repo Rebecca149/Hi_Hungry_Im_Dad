@@ -63,7 +63,7 @@ async function getJoke(event){
     const jokeDisplay = document.createElement('p')
     chat.appendChild(jokeDisplay)
     jokeDisplay.textContent = joke 
-    getAnotherJoke() //add setTimeout();
+    setTimeout(getAnotherJoke, 2000); //add setTimeout();
     }
 
 }
