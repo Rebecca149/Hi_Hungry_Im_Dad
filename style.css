@@ -11,6 +11,7 @@ p {
     margin: 5px;
     font-family: 'Gloria Hallelujah', cursive;
     display: block;
+    font-size: 24px;
 }
 
 input {
@@ -25,24 +26,25 @@ input {
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 500px;
+    height: 700px;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 #the-dad {
     border-radius: 50%;
     float:left;
+    display: block;
 }
 
 .left {
-    border: 2px solid red;
+    //border: 2px solid red;
     display: grid;
     justify-items: start;
     grid-template-rows: auto;
 
 }
 .right {
-    border: 2px solid green;
+    //border: 2px solid green;
     display: grid;
     justify-items: end;
     align-items: start;

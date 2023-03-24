@@ -38,6 +38,7 @@ const userName = document.querySelector('#user-name');
 userName.addEventListener('keypress', getName)
 const left = document.querySelector('.left')
 const right = document.querySelector('.right')
+const drum = document.querySelector('audio')
 
 // gets user's name, asks question and displays input field
 function getName(event) {
@@ -64,8 +65,9 @@ async function getJoke(event){
     console.log(joke)
     const jokeDisplay = document.createElement('p')
     left.appendChild(jokeDisplay)
-    jokeDisplay.textContent = joke 
-    setTimeout(getAnotherJoke, 2000); //add setTimeout();
+    jokeDisplay.textContent = joke
+    setTimeout (() => {drum.play()}, 1000);
+    setTimeout(getAnotherJoke, 5000); //add setTimeout();
     }
 
 }
@@ -87,19 +89,7 @@ function getAnotherJoke () {
     left.appendChild(newP)
     newP.textContent = 'Do you want to hear another joke?'
     createInputField()
-    getLastInput()
 }
-
-function getLastInput(){
-    let inputList = document.querySelectorAll(".chat input")
-    console.log(Array.from(inputList))
-}
-
-
-
-
-
-
 
 
 
