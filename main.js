@@ -73,7 +73,12 @@ async function getFetch() {
     return data.joke
 }
 
-
+function getAnotherJoke () {
+    const newP = document.createElement('p')
+    chat.appendChild(newP)
+    newP.textContent = 'Do you want to hear another joke?'
+    createInputField()
+}
 
 
 
