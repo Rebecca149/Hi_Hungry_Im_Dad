@@ -28,13 +28,41 @@ Bonus tasks
 
 
 */
-async function getFetch() {
-    let response = await fetch("https://icanhazdadjoke.com/", {
-        headers: { accept: "application/json" },
-      });
-    let data = await response.json()
-    console.log(data.joke)
-    return response
+
+const userName = document.querySelector('#user-name');
+userName.addEventListener('keypress', getName)
+
+
+function getName(event) {
+    if (event.key === "Enter") {
+    const greeting = document.querySelector(".greeting");
+    greeting.textContent = `Hello ${event.target.value}` }
 }
 
-getFetch()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// async function getFetch() {
+//     let response = await fetch("https://icanhazdadjoke.com/", {
+//         headers: { accept: "application/json" },
+//       });
+//     let data = await response.json()
+//     console.log(data.joke)
+//     return response
+// }
+
+// getFetch()
