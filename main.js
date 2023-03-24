@@ -36,6 +36,8 @@ Bonus tasks
 const chat = document.querySelector('.chat')
 const userName = document.querySelector('#user-name');
 userName.addEventListener('keypress', getName)
+const left = document.querySelector('.left')
+const right = document.querySelector('.right')
 
 // gets user's name, asks question and displays input field
 function getName(event) {
@@ -50,7 +52,7 @@ function getName(event) {
 // creates an input field, appends it to chat div, and adds an event listener to it 
 function createInputField(){
     const input = document.createElement('input')
-    chat.appendChild(input)
+    right.appendChild(input)
     input.addEventListener('keypress', getJoke)
 }
 
@@ -61,7 +63,7 @@ async function getJoke(event){
     const joke = await getFetch()
     console.log(joke)
     const jokeDisplay = document.createElement('p')
-    chat.appendChild(jokeDisplay)
+    left.appendChild(jokeDisplay)
     jokeDisplay.textContent = joke 
     setTimeout(getAnotherJoke, 2000); //add setTimeout();
     }
@@ -82,7 +84,7 @@ async function getFetch() {
 // creates new p element, appends it to div, asks question and calls creatInputField()
 function getAnotherJoke () {
     const newP = document.createElement('p')
-    chat.appendChild(newP)
+    left.appendChild(newP)
     newP.textContent = 'Do you want to hear another joke?'
     createInputField()
     getLastInput()

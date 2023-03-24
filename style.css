@@ -10,6 +10,7 @@ p {
     padding: 10px;
     margin: 5px;
     font-family: 'Gloria Hallelujah', cursive;
+    display: block;
 }
 
 input {
@@ -17,12 +18,15 @@ input {
     padding: 10px;
     margin: 5px;
     display: block;
+    height: 10px;
+    
 }
 
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 500px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 #the-dad {
@@ -32,7 +36,16 @@ input {
 
 .left {
     border: 2px solid red;
+    display: grid;
+    justify-items: start;
+    grid-template-rows: auto;
+
 }
 .right {
     border: 2px solid green;
+    display: grid;
+    justify-items: end;
+    align-items: start;
+    grid-template-rows: auto;
+
 }
