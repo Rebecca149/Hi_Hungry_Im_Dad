@@ -14,7 +14,12 @@
     - Use above variable as part of greeting string (Use ${})
 
 - User will have an option to input Yes/No.
-    - Dad tells joke regardless of answer
+    - create an input field 
+    - append the input field somewhere
+    - give it in an id or class
+    - add an event listener to the input field
+    - user puts something in
+    - Dad tells joke when enter is pressed regardless of answer
     - Special keyword to stop jokes.
 
 - Dad will tell joke anyway.
@@ -28,7 +33,7 @@ Bonus tasks
 
 
 */
-
+const chat = document.querySelector('.chat')
 const userName = document.querySelector('#user-name');
 userName.addEventListener('keypress', getName)
 
@@ -36,7 +41,23 @@ userName.addEventListener('keypress', getName)
 function getName(event) {
     if (event.key === "Enter") {
     const greeting = document.querySelector(".greeting");
-    greeting.textContent = `Hello ${event.target.value}` }
+    greeting.textContent = `Hello ${event.target.value}, do you want to hear a joke?`; 
+    createInputField();
+}
+    
+}
+
+function createInputField(){
+    const input = document.createElement('input')
+    chat.appendChild(input)
+    input.addEventListener('keypress', getJoke)
+}
+
+function getJoke(event){
+    if (event.key === "Enter") {
+    console.log('hello')
+    }
+
 }
 
 
