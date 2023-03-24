@@ -44,7 +44,7 @@ const drum = document.querySelector('audio')
 function getName(event) {
     if (event.key === "Enter") {
     const greeting = document.querySelector(".greeting");
-    greeting.textContent = `Hello ${event.target.value}, do you want to hear a joke?`; 
+    greeting.textContent = `Hello ${event.target.value}, I'm dad. Wanna hear a joke?`; 
     createInputField();
 }
     
@@ -65,8 +65,8 @@ async function getJoke(event){
     console.log(joke)
     const jokeDisplay = document.createElement('p')
     left.appendChild(jokeDisplay)
-    jokeDisplay.textContent = joke
-    setTimeout (() => {drum.play()}, 1000);
+    jokeDisplay.textContent = "I'm just gonna assume you said yes. \n" + joke;
+    setTimeout (() => {drum.play()}, 2000);
     setTimeout(getAnotherJoke, 5000); //add setTimeout();
     }
 
@@ -90,6 +90,8 @@ function getAnotherJoke () {
     newP.textContent = 'Do you want to hear another joke?'
     createInputField()
 }
+
+
 
 
 

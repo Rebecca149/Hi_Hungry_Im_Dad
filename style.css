@@ -11,7 +11,7 @@ p {
     margin: 5px;
     font-family: 'Gloria Hallelujah', cursive;
     display: block;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 input {
@@ -37,14 +37,14 @@ input {
 }
 
 .left {
-    //border: 2px solid red;
+    /* border: 2px solid red; */
     display: grid;
     justify-items: start;
     grid-template-rows: auto;
 
 }
 .right {
-    //border: 2px solid green;
+    /* border: 2px solid green; */
     display: grid;
     justify-items: end;
     align-items: start;
