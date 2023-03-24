@@ -39,6 +39,7 @@ userName.addEventListener('keypress', getName)
 const left = document.querySelector('.left')
 const right = document.querySelector('.right')
 const drum = document.querySelector('audio')
+const button = document.querySelector('#button')
 
 // gets user's name, asks question and displays input field
 function getName(event) {
@@ -89,6 +90,12 @@ function getAnotherJoke () {
     left.appendChild(newP)
     newP.textContent = 'Do you want to hear another joke?'
     createInputField()
+}
+
+button.addEventListener('click', emergencyStop)
+
+function emergencyStop () {
+    alert('Mum is on her way!')
 }
 
 

@@ -5,6 +5,10 @@ body {
     background-color: #a3d0ef;
 }
 
+#button {
+    background-color: red;
+}
+
 p {
     float: left;
     padding: 10px;
