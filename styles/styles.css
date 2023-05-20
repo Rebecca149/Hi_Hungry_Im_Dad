@@ -66,12 +66,56 @@ body {
     margin-top: 50px;
 }
 
+.backButton {
+    margin-top: 50px;
+    margin-left: 50px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
 .statsCard {
     background-color: var(--dark-color);
-    border-style: solid;
-    border-color:red
+    height: 70vh;
+    width: 50vw;
+    border-radius: 30px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
 }
 
 .statsTitle {
     color:white;
+    font-family: 'Darumadrop One', cursive;
+    font-size: 42px;
+    margin-bottom: 0px;
+}
+
+.statsContent {
+    display:flex;
+    flex-direction: row;
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.statsCategories {
+    display:flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.dadStatsValues {
+    display:flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.yourStatsValues {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
