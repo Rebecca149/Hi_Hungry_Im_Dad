@@ -1,0 +1,77 @@
+:root {
+    --background-color: #FCD581;
+    --dark-color: #0D324D;
+    --accent-color: #2191FB;
+  }
+
+body {
+    background-color: var(--background-color);
+    color: var(--dark-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    }
+
+#main_title {
+    font-family: 'Darumadrop One', cursive;
+    font-size: 140px;
+}
+  
+
+.page_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.button {
+    background-color: var(--accent-color);
+    border: 2px solid #422800;
+    border-radius: 30px;
+    box-shadow: #422800 4px 4px 0 0;
+    color: #422800;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 24px;
+    padding: 0 18px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color:white
+}
+
+.button:hover {
+  background-color: #5FB0FC;
+}
+
+.button:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+#beginButton {
+    margin-top: 50px;
+}
+
+.statsCard {
+    background-color: var(--dark-color);
+    border-style: solid;
+    border-color:red
+}
+
+.statsTitle {
+    color:white;
+}
