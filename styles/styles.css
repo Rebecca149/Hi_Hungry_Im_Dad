@@ -13,6 +13,11 @@ body {
     padding: 0;
     }
 
+a {
+    color:white;
+    text-decoration: none;
+}
+
 #main_title {
     font-family: 'Darumadrop One', cursive;
     font-size: 140px;
@@ -73,6 +78,10 @@ body {
     padding-bottom: 4px;
 }
 
+#emergencyStopButton {
+    background-color: red;
+}
+
 .statsCard {
     background-color: var(--dark-color);
     height: 70vh;
@@ -118,4 +127,25 @@ body {
     display:flex;
     flex-direction: column;
     justify-content: space-evenly;
+}
+
+.header {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.messageBox {
+    position:fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 20px;
+}
+
+.messageInputField {
+    width:80vw;
+    height: 50px;
 }

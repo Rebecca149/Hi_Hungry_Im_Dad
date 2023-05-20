@@ -99,17 +99,6 @@ function emergencyStop () {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 // async function getFetch() {
 //     let response = await fetch("https://icanhazdadjoke.com/", {
 //         headers: { accept: "application/json" },
