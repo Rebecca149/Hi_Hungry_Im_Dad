@@ -5,32 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hi Hungry, I'm Dad</title>
-    <link rel="stylesheet" href="/styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/styles.css">
 </head>
-
-
-
 <body>
-    <header class="header">
-        <button class="button backButton"><a href="home_page.html">Back</a></button>
-        <button class="button backButton" id="emergencyStopButton">Emergency stop</button>
-    </header>
-    <main class="chatSection">
-            <img class='chatIcons' src="../Dad_icon.png" alt=""/>
-            <img class='chatIcons' src="../User_icon.png" alt=""/>
-    </main>
-    <footer class="messageBox">
-        <input type="'text" class="messageInputField">
-        <button class="sendMessageButton">Send</button>
-    </footer>
-    
-    <audio src="https://www.fesliyanstudios.com/play-mp3/5745"></audio>
-    <script src="main.js"></script>
+    <div class="page_content">
+    <h1 id="main_title">Hi Hungry, I'm Dad!</h1>
+    <div class = 'statButtons'>
+        <button id="dadStats" class="button"><a href="dad_stats.html">Dad Stats</a></button>
+        <button id="yourStats" class="button"><a href="your_stats.html">Your Stats</a></button>
+    </div>
+    <button id="beginButton" class="button"><a href='chat.html'>Begin!</a></button>
+    </div>
 </body>
-
-
 </html>

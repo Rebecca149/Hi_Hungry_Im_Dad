@@ -203,9 +203,22 @@ a {
     border-color: blue;
     height:75vh;
     margin-top: 20px;
+    display: grid;
+    grid-template-rows: 1fr auto;
 }
 
 .chatIcons {
     height:150px;
     width:150px
+}
+
+.chatSectionGrid {
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    grid-template-columns: 1fr 5fr 1fr;
+}
+
+.theChats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
