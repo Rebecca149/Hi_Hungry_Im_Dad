@@ -17,5 +17,14 @@ function emergencyStop(){
 }
 
 
-// create a function that fetched data from the api and put it into a list element
+// create a function that fetched data from the API
+
+async function getJoke() {
+    const res = await fetch("https://icanhazdadjoke.com/", {
+        headers: { accept: "application/json" },  //specifies that the response should be in JSON format
+      })
+    const data = await res.json();
+    console.log(data.joke);
+}
+
 
