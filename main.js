@@ -21,7 +21,8 @@ async function getJoke() {
         headers: { accept: "application/json" },  //specifies that the response should be in JSON format
       });
     const data = await res.json();
-    console.log(data.joke);
+    let joke = data.joke
+    return joke;
 }
 
 // import the name of the user (dummy user name used for now)
@@ -56,5 +57,20 @@ function sendUserInput() {
 
  theChats.appendChild(placeholderChat); //add the placeholder element to the dad side of the CSS grid
  theChats.appendChild(userChat); // adds the user's message to the user side of the CSS grid
+ dadTellJoke();
+}
+
+// function that puts the next dad joke into the chat
+
+async function dadTellJoke() {
+const joke = await getJoke(); //need to await as joke is the result of fetching data from the API
+let dadChat = document.createElement('p');
+const placeholderChat = document.createElement('div');
+
+dadChat.classList.add('dadChat', 'chat');
+dadChat.textContent = `${joke}`;
+
+theChats.appendChild(dadChat);
+theChats.appendChild(placeholderChat);
 
 }
