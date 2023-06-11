@@ -29,9 +29,9 @@ let userName= 'Dave';
 
 function initialDadGreeting() {
     const dadGreeting = document.createElement('p');
-    const placeholderChat = document.createElement('div')
+    const placeholderChat = document.createElement('div');
     if (userName === '') {
-        dadGreeting.classList.add('dadChat');
+        dadGreeting.classList.add('dadChat', 'chat');
         dadGreeting.textContent = `Hey kid, I'm Dad. Check out your stats on the homepage and give yourself a name so I know what to call you!`
     }
     else {
@@ -41,7 +41,6 @@ function initialDadGreeting() {
     theChats.appendChild(dadGreeting);
     theChats.appendChild(placeholderChat);
 }
-
 initialDadGreeting(userName);
 
 // add an event listener to the send button so that when it is pressed it stores the user input
@@ -49,6 +48,13 @@ initialDadGreeting(userName);
 sendButton.addEventListener('click', sendUserInput);
 
 function sendUserInput() {
- let userInput = userInputField.value;
- return userInput;
+ let userChat = document.createElement('p') //define a new element that will hold the user's message
+ userChat.textContent = `${userInputField.value}`; // adds text content to the new element equal to the current value in the input field
+ const placeholderChat = document.createElement('div'); //define a placeholder chat on the dad side so that the user's message is on its own line
+ 
+ userChat.classList.add('userChat', 'chat'); //add classes to the new element so that it can be styled
+
+ theChats.appendChild(placeholderChat); //add the placeholder element to the dad side of the CSS grid
+ theChats.appendChild(userChat); // adds the user's message to the user side of the CSS grid
+
 }
