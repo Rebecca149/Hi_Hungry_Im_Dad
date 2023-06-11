@@ -199,8 +199,8 @@ a {
 }
 
 .chatSection {
-    border-style: solid;
-    border-color: blue;
+    /* border-style: solid;
+    border-color: blue; */
     height:75vh;
     margin-top: 20px;
     display: grid;
@@ -221,4 +221,5 @@ a {
 .theChats {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
 }
