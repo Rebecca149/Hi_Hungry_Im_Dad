@@ -57,6 +57,7 @@ function sendUserInput() {
 
  theChats.appendChild(placeholderChat); //add the placeholder element to the dad side of the CSS grid
  theChats.appendChild(userChat); // adds the user's message to the user side of the CSS grid
+ userInputField.value = '' //empties the input field for next response
  dadTellJoke();
 }
 
@@ -72,5 +73,18 @@ dadChat.textContent = `${joke}`;
 
 theChats.appendChild(dadChat);
 theChats.appendChild(placeholderChat);
+
+setTimeout(offerNewJoke, 3000)
+}
+
+async function offerNewJoke(){
+    const jokeOffer = document.createElement('p')
+    const placeholderChat= document.createElement('div')
+
+    jokeOffer.classList.add('dadChat', 'chat');
+    jokeOffer.textContent = `Wanna hear another joke?`; 
+
+    theChats.appendChild(jokeOffer);
+    theChats.appendChild(placeholderChat);
 
 }

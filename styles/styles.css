@@ -199,8 +199,8 @@ a {
 }
 
 .chatSection {
-    /* border-style: solid;
-    border-color: blue; */
+    border-style: solid;
+    border-color: blue;
     height:75vh;
     margin-top: 20px;
     display: grid;
@@ -208,8 +208,10 @@ a {
 }
 
 .chatIcons {
-    height:150px;
-    width:150px
+    height:100px;
+    width:100px;
+    justify-self: center;
+    align-self: end;
 }
 
 .chatSectionGrid {
