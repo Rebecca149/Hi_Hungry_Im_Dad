@@ -24,12 +24,24 @@ a {
 }
   
 
-.page_content {
+.title_page_content {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
+}
+
+.page_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+}
+
+.title{
+    height: 60vh;
 }
 
 .button {
@@ -41,7 +53,7 @@ a {
     cursor: pointer;
     display: inline-block;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 20px;
     padding: 0 18px;
     line-height: 50px;
     text-align: center;
@@ -51,10 +63,10 @@ a {
     touch-action: manipulation;
     margin-left: 30px;
     margin-right: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
     color:white
 }
 
@@ -69,6 +81,14 @@ a {
 
 #beginButton {
     margin-top: 50px;
+    justify-self: center;
+    width: 40%;
+    align-self: center;
+}
+
+#menuButtons {
+    display:flex;
+    flex-direction: column;
 }
 
 .backButton {
@@ -105,7 +125,7 @@ a {
     flex-direction: row;
     color:white;
     font-family: 'Roboto', sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     margin-top: 20px;
 }
 
@@ -134,7 +154,7 @@ a {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 0px;
 }
 
 .messageBox {
@@ -228,4 +248,18 @@ a {
 
 .userChat {
     justify-self: end;
+}
+
+.chat {
+    width: 300px;
+    height: 100px;
+    margin: 50px auto;
+    background: var(--dark-color);
+    padding: 20px;
+    text-align: center;
+    font-weight: 900;
+    color: #fff;
+    font-family: arial;
+    position:relative;
+    border-radius: 15px;
 }
